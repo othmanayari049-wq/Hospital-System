@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">OOP Course Project</p>
+      <h1>Hospital Management System</h1>
+      <p>Educational dashboard powered by Java and vanilla JavaScript.</p>
+    </div>
+    <span class="status">Demo data only</span>
+  </header>
+
+  <main>
+    <section id="stats" class="stats" aria-label="Hospital summary"></section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">Operations</p><h2>Today's appointments</h2></div>
+        <button id="refresh">Refresh</button>
+      </div>
+      <div class="table-wrap"><table><thead><tr><th>Time</th><th>Patient</th><th>Doctor</th><th>Reason</th><th>Status</th></tr></thead><tbody id="appointments"></tbody></table></div>
+    </section>
+
+    <div class="grid">
+      <section class="panel"><p class="eyebrow">People</p><h2>Registered patients</h2><div id="patients" class="list"></div></section>
+      <section class="panel"><p class="eyebrow">Supply</p><h2>Inventory</h2><div id="inventory" class="list"></div></section>
+    </div>
+  </main>
+
+  <footer>Educational OOP demonstration. Not for real clinical use or patient data.</footer>
+  <script src="/app.js"></script>
+</body>
+</html>
