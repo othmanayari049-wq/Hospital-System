@@ -1,0 +1,9 @@
+package com.qataruniversity.hms.domain;
+
+public enum AppointmentStatus {
+    SCHEDULED,
+    CHECKED_IN,
+    COMPLETED,
+    CANCELLED,
+    NO_SHOW
+}
